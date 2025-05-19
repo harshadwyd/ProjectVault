@@ -1,0 +1,60 @@
+.footer {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for light mode */
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+.social-media {
+    margin: 15px 0;
+}
+
+.social-media a {
+    color: #007bff; /* Bootstrap primary color */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth color and scale transition */
+    display: inline-block; /* Ensure proper spacing and alignment */
+    margin: 0 10px; /* Add margin between icons */
+}
+
+.social-media a:hover {
+    color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+/* Additional styles for social media icons */
+.social-media a i { /* Assuming you're using Font Awesome or similar for icons */
+    font-size: 24px; /* Adjust icon size */
+}
+
+/* Dark mode styles */
+.footer.dark-mode {
+    background-color: #1e1e1e; /* Dark background for footer */
+    transition: background-color 0.3s ease; /* Smooth transition for dark mode */
+}
+
+.footer h2,
+.footer p {
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.footer.dark-mode h2,
+.footer.dark-mode p {
+    color: #ffffff; /* Light text color for dark mode */
+}
+
+.text-light {
+    color: #ffffff; /* Light text color */
+}
+
+.text-dark {
+    color: #333333; /* Dark text color */
+}
+
+/* Optional: Additional styles for animation */
+.footer h2 {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Add transition for heading */
+}
+
+.footer h2:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+}

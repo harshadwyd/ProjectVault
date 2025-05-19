@@ -1,0 +1,43 @@
+.navbar {
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient background */
+    transition: background 0.3s ease; /* Smooth transition for background */
+}
+
+.navbar.dark-mode {
+    background: #1e1e1e; /* Dark background for dark mode */
+}
+
+.navbar .nav-link {
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.navbar .navbar-brand {
+    font-weight: bold; /* Make brand text bold */
+    font-size: 1.5rem; /* Increase brand font size */
+}
+
+.navbar .form-check-label {
+    margin-left: 10px; /* Spacing for the switch label */
+}
+
+.form-check-input:checked {
+    background-color: #007bff; /* Custom color for checked switch */
+    border-color: #007bff; /* Border color for checked switch */
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus effect */
+}
+
+/* Optional: Make the toggle button more prominent */
+.navbar-toggler {
+    border: none; /* Remove default border */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,..."); /* Customize toggle icon (SVG or PNG) */
+}

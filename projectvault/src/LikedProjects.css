@@ -1,0 +1,142 @@
+body {
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    background-color: #ffffff; /* Light background for the entire body */
+    color: #000; /* Default text color */
+}
+
+.row {
+    margin: 0;
+}
+
+.col {
+    display: flex;
+    justify-content: center; /* Center the cards in the column */
+}
+
+.card {
+    border: none; /* Remove the default border */
+    border-radius: 8px; /* Slightly smaller rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly increase scale on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.card-title {
+    font-size: 1.1rem; /* Decrease title font size */
+    font-weight: bold; /* Make title bold */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.card-title:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+.card-subtitle {
+    font-size: 0.8rem; /* Decrease subtitle font size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.card-subtitle:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.card-text {
+    font-size: 0.85rem; /* Decrease text size */
+}
+
+.text-center {
+    padding: 10px; /* Less padding for no projects message */
+    font-size: 1rem; /* Adjust font size for no projects message */
+    color: #999; /* Gray color for the message */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Fade in effect */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Specific style for the caption of liked projects */
+.caption {
+    color: #000080; /* Navy blue for caption text in light mode */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.caption:hover {
+    color: #004080; /* Darker shade on hover */
+}
+
+/* Dark mode styles for the caption and other elements */
+body.dark-mode {
+    background-color: #121212; /* Dark background for body */
+    color: #ffffff; /* Light text color */
+}
+
+.dark-mode .caption {
+    color: #add8e6; /* Light blue for caption text in dark mode */
+}
+
+.card.dark-mode {
+    background-color: #282828; /* Dark card background */
+}
+
+/* Ensure card text is visible in dark mode */
+.card-title.dark-mode,
+.card-subtitle.dark-mode,
+.card-text.dark-mode {
+    color: #ffffff; /* Light card title and text in dark mode */
+}
+
+/* Light mode card styles */
+.card {
+    background-color: #f8f9fa; /* Light card background */
+}
+
+.card.dark-mode {
+    background-color: #1e1e1e; /* Dark background for cards */
+    border-color: #444; /* Border color for dark mode */
+}
+
+/* Additional styles for the caption card */
+.caption {
+    margin: 0; /* Reset margin for better layout */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Button hover effect */
+.btn {
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for button */
+    display: inline-flex; /* Use inline-flex for centering */
+    align-items: center; /* Center icon and text vertically */
+}
+
+/* Like button styles */
+.btn-like {
+    background-color: #007bff; /* Primary blue */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded buttons */
+    padding: 10px 15px; /* Padding for the button */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.btn-like:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Heart icon hover effect */
+.btn-like .fa-heart {
+    margin-left: 5px; /* Space between text and icon */
+    transition: transform 0.2s; /* Smooth transition for icon scaling */
+}
+
+.btn-like:hover .fa-heart {
+    transform: scale(1.2); /* Scale up the heart icon on hover */
+}

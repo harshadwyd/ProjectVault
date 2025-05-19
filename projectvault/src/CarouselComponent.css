@@ -1,0 +1,11 @@
+.custom-carousel {
+  max-width: 800px; /* Set a maximum width for the carousel */
+  margin: auto; /* Center the carousel */
+  border-radius: 15px; /* Rounded edges */
+  overflow: hidden; /* Ensure rounded edges are visible */
+}
+
+.custom-carousel img {
+  height: 400px; /* Set a specific height for images */
+  object-fit: cover; /* Maintain aspect ratio while covering the area */
+}

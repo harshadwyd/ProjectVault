@@ -1,0 +1,73 @@
+/* src/styles.css */
+
+body {
+  background-color: #B2E0E6; /* Baby blue background */
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark mode */
+}
+
+h1 {
+  color: #007bff; /* Bootstrap primary color */
+  margin-bottom: 20px;
+}
+
+.card {
+  transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.input-group {
+  max-width: 600px;
+  margin: 0 auto; /* Center the search input */
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px; /* Add margin for mobile view */
+  }
+}
+
+.btn-primary {
+  background-color: #003366; /* Navy blue */
+  border-color: #003366; /* Navy blue */
+}
+
+.btn-outline-primary {
+  color: #003366; /* Navy blue */
+  border-color: #003366; /* Navy blue */
+}
+
+.btn-danger {
+  background-color: red; /* Red for danger button */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background for body */
+  color: #ffffff; /* Light text color */
+}
+
+h1.dark-mode {
+  color: #ffffff; /* Light color for headings in dark mode */
+}
+
+.card.dark-mode {
+  background-color: #1e1e1e; /* Dark card background */
+  border-color: #333; /* Darker border for cards in dark mode */
+}
+
+.btn-primary.dark-mode {
+  background-color: #0056b3; /* Lighter blue for primary buttons in dark mode */
+}
+
+.btn-outline-primary.dark-mode {
+  color: #ffffff; /* White text for outline buttons in dark mode */
+  border-color: #ffffff; /* White border for outline buttons in dark mode */
+}
+
+.btn-danger.dark-mode {
+  background-color: #dc3545; /* Adjusted danger button color for dark mode */
+}

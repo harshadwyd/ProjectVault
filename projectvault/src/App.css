@@ -1,0 +1,140 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #a9e1e8; /* Baby blue background */
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark mode */
+}
+
+.navbar {
+  background-color: #003d66; /* Navy blue for the navbar */
+  color: white; /* Set text color to white */
+  transition: background-color 0.3s ease; /* Smooth transition for dark mode */
+  padding: 1rem; /* Add padding for a better look */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Center logo and text vertically */
+}
+
+.container {
+  margin-top: 20px;
+}
+
+h1, h2 {
+  color: #003d66; /* Navy blue */
+  text-align: center;
+  transition: color 0.3s ease; /* Smooth transition for font color */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 2em;
+}
+
+.btn-primary {
+  background-color: #FF7F50; /* Coral */
+  border: none;
+  color: white;
+  border-radius: 5px; /* Rounded buttons */
+  transition: background-color 0.3s ease; /* Smooth transition for button */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Danger button color */
+  border-radius: 5px; /* Rounded buttons */
+  transition: background-color 0.3s ease; /* Smooth transition for button */
+}
+
+.card {
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+}
+
+.card-title {
+  color: #003d66; /* Navy blue for card titles */
+}
+
+.card-text {
+  color: #333; /* Text color */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background for body */
+  color: #ffffff; /* Light text color */
+}
+
+.navbar.dark-mode {
+  background-color: #1e1e1e; /* Dark background for navbar */
+  color: #ffffff; /* White text in dark mode */
+}
+
+h1.dark-mode, h2.dark-mode {
+  color: #ffffff; /* Light text for headings in dark mode */
+}
+
+.card.dark-mode {
+  background-color: #282828; /* Dark card background */
+  border-color: #444; /* Border color for dark mode */
+}
+
+.card-title.dark-mode {
+  color: #ffffff; /* Light card title in dark mode */
+}
+
+.card-text.dark-mode {
+  color: #cccccc; /* Light card text in dark mode */
+}
+
+/* Suggestions list styles */
+.suggestions-list {
+  position: absolute;
+  background: #fff; /* Light background in normal mode */
+}
+
+body.dark-mode .suggestions-list {
+  background: #444; /* Dark background for suggestions in dark mode */
+}
+
+body.dark-mode .suggestions-list li {
+  color: #ffffff; /* Light text color for suggestions in dark mode */
+}
+
+/* Toast styles */
+.toast {
+  background-color: #f8f9fa; /* Light background for toast */
+  color: #212529; /* Dark text for toast */
+}
+
+body.dark-mode .toast {
+  background-color: #444; /* Dark background for toast in dark mode */
+  color: #ffffff; /* Light text for toast in dark mode */
+}
+
+.suggestions-list {
+  position: absolute;  /* Allow it to be positioned relative to its parent */
+  z-index: 1000;      /* Ensure it's on top of other elements */
+  background: white;  /* Set a background color for better visibility */
+  border: 1px solid #ccc; /* Add a border for better separation */
+  list-style: none;   /* Remove default list styles */
+  padding: 0;         /* Remove padding */
+  margin: 0;          /* Remove margin */
+  max-height: 200px;  /* Limit height to avoid overflow */
+  overflow-y: auto;   /* Allow scrolling if there are many suggestions */
+}
+
+.suggestions-list li {
+  padding: 8px; /* Add some padding */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.suggestions-list li:hover {
+  background-color: #2992d3; /* Highlight on hover */
+}
