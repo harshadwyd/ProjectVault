@@ -1,2 +1,2 @@
 # ProjectVault
-ProjectVault is an innovative platform designed to streamline access to academic projects, enabling students to browse, like, and save previous research work.
+ProjectVault is an innovative platform designed to streamline access to academic projects, enabling students to browse, like, and save previous research work. Built using ReactJS and Bootstrap, this application offers a user-friendly experience with functionalities like advanced search, dark mode, category filters, and toast notifications. ProjectVault aims to enhance the research process, support idea generation, and prevent repetition of existing work.
